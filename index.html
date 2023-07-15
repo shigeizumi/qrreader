@@ -107,7 +107,7 @@
           outputMessage.hidden = true;
           outputData.parentElement.hidden = false;
           outputData.innerText = code.data;
-          await fetch("https://script.google.com/macros/s/AKfycbyK_tuNQcalAril40CQJHOgvX4Glt_a-J1OAAtliQ3m995fOlYsSJOPJDN_BopDsGohcg/exec?number="+code.data)
+          await fetch("https://script.google.com/macros/s/AKfycbyzlqpGsOCGJ2WK0ZBH3yw8Uz51WkeiUbentxTnDpUIFVjqBl6PJZJdwo_ANXif7sE4vg/exec?number="+code.data)
           .then(res=>res.json())
           .then(data=>{
             alert("チケット番号："+data.number+"\n名前："+data.name+"\nふりがな："+data.jname+"\n券種："+data.type)
