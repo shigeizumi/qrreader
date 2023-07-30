@@ -52,16 +52,11 @@ body {
     color: #000000;
     border-radius: 100vh;
     margin-right: 10px;
-    font-size:2vh;
-    width: 8vh;
-    height: 5vh;
+    font-size: large;
 }
 
 #btnarea{
     width: 100%;
-    background-color: aquamarine;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .yes{
