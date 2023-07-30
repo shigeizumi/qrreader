@@ -1,0 +1,107 @@
+body {
+    font-family: 'Ropa Sans', sans-serif;
+    color: #333;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  #githubLink {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    color: #2D99FF;
+  }
+
+  h1 {
+    margin: 10px 0;
+    font-size: 40px;
+  }
+
+  #loadingMessage {
+    text-align: center;
+    padding: 40px;
+    background-color: #eee;
+  }
+
+  #canvas {
+    width: 100%;
+  }
+
+  #output {
+    margin-top: 20px;
+    background: #eee;
+    padding: 10px;
+    padding-bottom: 0;
+  }
+
+  #output div {
+    padding-bottom: 10px;
+    word-wrap: break-word;
+  }
+
+  #noQRFound {
+    text-align: center;
+  }
+
+
+
+  button{
+    font-family: "Tsukushi A Round Gothic","筑紫A丸ゴシック";
+    font-weight: bold;
+    color: #000000;
+    border-radius: 100vh;
+    margin-right: 10px;
+    font-size:2vh;
+    width: 8vh;
+    height: 5vh;
+}
+
+#btnarea{
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.yes{
+    background-color: darksalmon;
+}
+.no{
+    background-color: rgb(128, 235, 249);
+}
+    /* モーダルCSS */
+.modalArea {
+    display: none;
+    position: fixed;
+    z-index: 10; /*サイトによってここの数値は調整 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .modalBg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30,30,30,0.9);
+  }
+  
+  .modalWrapper {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 70%;
+    max-width: 500px;
+    padding: 10px 30px;
+    background-color: #fff;
+    border-radius: 2vh;
+  }
+  
+  .closeModal {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    cursor: pointer;
+  }
