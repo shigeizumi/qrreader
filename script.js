@@ -68,7 +68,7 @@ async function tick() {
 function choice(arr){
     $('#Area').fadeIn();
     console.log(arr[0])
-    let string=`<a href="javascript:void(0)" class="btn btn--orange btn--radius" id="${arr[1]}" onclick="get(this)">団体</a>`;
+    let string=`<a href="javascript:void(0)" class="btn btn--orange btn--radius" id="${arr[1]}" onclick="get(this)">団体(${arr[2]}名)</a>`;
     string+=`<a href="javascript:void(0)" class="btn btn--brue btn--radius" onclick="get(this)" id="${arr[0]}">個人</a>`;
     document.getElementById("btnarea").insertAdjacentHTML("beforeend",string);
 }
