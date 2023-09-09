@@ -48,7 +48,7 @@ async function tick() {
       outputData.innerText = code.data;
       const arr=code.data.split("_");
       if(arr[0]==arr[1])
-        await fetch("https://script.google.com/macros/s/AKfycbzi-SYIvAh0N_KVuZACzPAcUSV91lS6FD8dGU3uX8L2sqNLjHnCtBnCFzoAlcHsV0ID7g/exec?number="+arr[0])
+        await fetch("https://script.google.com/macros/s/AKfycbxa8DbIRMwOOmum-IMjlbZqnuv6QaxA5IHq-sL2I8NLtwqyIuPjxvRaM9Z9A3-hhxtb_A/exec?number="+arr[0])
         .then(res=>res.json())
         .then(data=>{
           alert(data.join(" "));
@@ -74,7 +74,7 @@ function choice(arr){
 }
 
 async function get(btn){
-    await fetch("https://script.google.com/macros/s/AKfycbzi-SYIvAh0N_KVuZACzPAcUSV91lS6FD8dGU3uX8L2sqNLjHnCtBnCFzoAlcHsV0ID7g/exec?number="+btn.id)
+    await fetch("https://script.google.com/macros/s/AKfycbxa8DbIRMwOOmum-IMjlbZqnuv6QaxA5IHq-sL2I8NLtwqyIuPjxvRaM9Z9A3-hhxtb_A/exec?number="+btn.id)
         .then(res=>res.json())
         .then(data=>{
             data=data.map(e=>`お名前：${e[0]} 、 入場時刻：${e[1]}`);
